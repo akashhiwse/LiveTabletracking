@@ -1,0 +1,58 @@
+<section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img
+                    src="https://m.economictimes.com/thumb/msid-90724647,width-1254,height-836,resizemode-4,imgsize-28786/indian-hotels.jpg"
+                  
+                    style="width: 185px;" alt="logo">
+                     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60502.96597968156!2d73.68219922597558!3d18.59947736476178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbc048041bef%3A0xd0c9eb5ac3c3dee5!2sHinjawadi%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1665046411366!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+
+                <form (ngSubmit)="userlogin()">
+                  <h1> login to your account</h1>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example11">Username</label>
+                    <input type="text" id="form2Example11" class="form-control" id="userID" name="userID"
+                      [(ngModel)]="user.emailId" placeholder="Phone number or email address" />
+
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example11">Password</label>
+                    <input type="password" id="form2Example11" class="form-control" id="userpassword"
+                      name="userpassword" [(ngModel)]="user.password" placeholder="Enter Password" />
+
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" >Login</button>
+                    <a class="text-muted" href="#!">Forgot password?</a>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <button type="button" class="btn btn-outline-danger" routerLink="/register"> register Here</button>
+                    <a href="register"></a>
+
+                  
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <!-- half data we can put Here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
